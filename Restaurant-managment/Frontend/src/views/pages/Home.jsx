@@ -34,7 +34,7 @@ function Home() {
 
   async function placeOrder(order) {
     try {
-      await axios.post('http://localhost:3000/placeorder', [order]);
+      await axios.post('https://restaurant-management-system-dum2.onrender.com/placeorder', [order]);
       clearcart();
       alert("Order Placed Successfully \nThank You for Ordering");
     } catch (error) {
